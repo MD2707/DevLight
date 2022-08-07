@@ -24,6 +24,14 @@ body{
     margin-bottom: 1rem;
 }
 
+#defaut{
+    display: none;
+}
+#defaut:hover{
+    cursor: pointer;
+    color: #f9d70f;
+}
+
 #sous-titre>p{
     width: 30rem;
 }
@@ -64,11 +72,12 @@ a{
     padding: 10px 0px;
 }
 a:hover{
-    color: orange;
+    color: #f9d70f;
     border-bottom: 2px solid gold;
 }
 .deroulant{
     width: fit-content;
+    cursor: pointer;
 }
 .sous{
     display: none;

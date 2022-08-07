@@ -16,9 +16,10 @@
             </div>
         </div>
         <div id="sous-titre">
-            <p>Welcome on DevLight , here you can find some coding advice ! </p>
+            <p>Welcome on DevLight , here you can find some coding advice !  </p>
             <ul>
-                <li class="deroulant"><a>Filtrer par</a>
+                <span id="defaut" onclick="gestionTrie(this.id)"> &#10006;</span>
+                <li class="deroulant"> <a>Sorted by</a>
                   <ul class="sous">
                     <li><a id="java" onclick="gestionTrie(this.id)" >Java</a></li>
                     <li><a id="web" onclick="gestionTrie(this.id)"  >HTML / CSS / Javascript </a></li>

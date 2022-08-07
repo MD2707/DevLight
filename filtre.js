@@ -4,7 +4,8 @@ function gestionTrie(a_id){
         var tab1 = document.getElementsByClassName("PublicationSQL")
          var tab2 = document.getElementsByClassName("PublicationWeb")
          var titre = document.getElementById("headerImg").src="image/BannerJava.png"
-         masquerPublication(tab1,tab2)  
+         masquerPublication(tab1,tab2)
+         afficherDefault()  
      }
 
      if(a_id=="sql"){
@@ -12,6 +13,7 @@ function gestionTrie(a_id){
        var tab2 = document.getElementsByClassName("PublicationWeb")
        var titre = document.getElementById("headerImg").src="image/bannerSQL.png"
        masquerPublication(tab1,tab2)
+       afficherDefault()
      }
 
      if(a_id=="web"){
@@ -19,12 +21,26 @@ function gestionTrie(a_id){
         var tab2 = document.getElementsByClassName("PublicationJava")
         var titre = document.getElementById("headerImg").src="image/bannerHtmlCssJs.png"
         masquerPublication(tab1,tab2)
+        afficherDefault()
+     }
+     if(a_id=="defaut"){
+       var titre = document.getElementById("headerImg").src="image/BannerDefault.png"
+       masquerDefault()
      }
 }
 function masquerPublication(tab1,tab2){
     for(var i=0; i<tab1.length;i++) tab1[i].style.display ="none";
     for(var i=0; i<tab2.length;i++) tab2[i].style.display ="none";
 }
+
+function masquerDefault(){
+  var span = document.getElementById("defaut").style.display="none"
+}
+
+function afficherDefault(){
+  var span = document.getElementById("defaut").style.display="block"
+}
+
 function resetAffichage(){
     var tabTotal = document.getElementsByClassName("publication")
     for(var i=0; i<tabTotal.length;i++) tabTotal[i].style.display ="block";
