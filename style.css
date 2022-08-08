@@ -44,13 +44,19 @@ body{
     height: auto;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    align-items: center;
 }
 .categorie{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
+    width: 80%;
+}
+
+.publication{
+    margin: 1rem;
 }
 /**MENU DEROULANT**/
 
